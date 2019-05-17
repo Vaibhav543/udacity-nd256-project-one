@@ -1,0 +1,14 @@
+Task 0: O(1)
+Code will always execute in the same amount of time, regardless of the input data.
+
+Task 1: O(N)
+Execution time will grow linearly, in direct proportion to the input data.
+
+Task 2: O(N)
+Execution time will grow linearly, in direct proportion to the input data.
+
+Task 3: O(N)
+Execution time will grow linearly, in direct proportion to the input data.
+
+Task 4: O(N)
+Execution time will grow linearly, in direct proportion to the input data.
