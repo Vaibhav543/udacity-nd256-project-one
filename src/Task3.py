@@ -1,8 +1,6 @@
 import csv
 import re
 
-import utils
-
 """
 TASK 3:
 (080) is the area code for fixed line telephones in Bangalore.
@@ -36,6 +34,11 @@ The percentage should have 2 decimal digits
 """
 
 landline_pattern = re.compile(r'^\((0[0-9]+)\)')
+
+
+def dedupe_list(input):
+    """Remove duplicates from the given list"""
+    return list(set(input))
 
 
 def is_bangalore_number(phone_number):
@@ -99,9 +102,8 @@ with open('calls.csv', 'r') as f:
         if is_bangalore_number(receiving):
             total_to_bangalore += 1
 
-
 # Remove duplicates and sort
-area_codes = sorted(utils.dedupe_list(area_codes))
+area_codes = sorted(dedupe_list(area_codes))
 
 # Part A:
 print('The numbers called by people in Bangalore have codes:')

@@ -1,7 +1,5 @@
 import csv
 
-import utils
-
 """
 TASK 4:
 The telephone company want to identify numbers that might be doing
@@ -18,6 +16,12 @@ The list of numbers should be print out one per line in lexicographic order with
 callers = []
 whitelist = []
 
+
+def dedupe_list(input):
+    """Remove duplicates from the given list"""
+    return list(set(input))
+
+
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     for text in list(reader):
@@ -32,8 +36,8 @@ with open('calls.csv', 'r') as f:
         whitelist.append(receiving)
 
 # Deduplicate the lists
-callers = utils.dedupe_list(callers)
-whitelist = utils.dedupe_list(whitelist)
+callers = dedupe_list(callers)
+whitelist = dedupe_list(whitelist)
 
 # The list of suspicious numbers is those that appear in the callers list, but not in the whitelist
 suspicious = set(callers).difference(whitelist)
