@@ -7,8 +7,8 @@ Execution time will grow linearly, in direct proportion to the input data.
 Task 2: O(N)
 Execution time will grow linearly, in direct proportion to the input data.
 
-Task 3: O(N)
-Execution time will grow linearly, in direct proportion to the input data.
+Task 3: O(N log N)
+Execution time for the bulk of the code will grow linearly, in direct proportion to the input data. However, the `sorted` function has a complexity of `O(n log n)`, which affects the overall efficiency of the code.
 
-Task 4: O(N)
-Execution time will grow linearly, in direct proportion to the input data.
+Task 4: O(N log N)
+Execution time for the bulk of the code will grow linearly, in direct proportion to the input data. However, the `sorted` function has a complexity of `O(n log n)`, which affects the overall efficiency of the code.
